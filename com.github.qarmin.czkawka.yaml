@@ -1,7 +1,7 @@
 app-id: com.github.qarmin.czkawka
-runtime: org.gnome.Platform
-runtime-version: '3.38'
-sdk: org.gnome.Sdk
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
 command: czkawka_gui
@@ -11,6 +11,7 @@ finish-args:
 - "--socket=wayland"
 - "--filesystem=host"
 - "--device=dri"
+- "--filesystem=~/.var/app"
 build-options:
   append-path: "/usr/lib/sdk/rust-stable/bin"
   env:
