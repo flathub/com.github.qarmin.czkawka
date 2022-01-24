@@ -24,10 +24,10 @@ modules:
   - cargo --offline build --release
   - install -Dm755 ./target/release/czkawka_gui -t /app/bin/
   - install -Dm644 ./data/icons/com.github.qarmin.czkawka.svg -t /app/share/icons/hicolor/scalable/apps/
-  - install -Dm644 ./pkgs/com.github.qarmin.czkawka.desktop -t /app/share/applications/
+  - install -Dm644 ./data/com.github.qarmin.czkawka.desktop -t /app/share/applications/
   - install -Dm644 ./data/com.github.qarmin.czkawka.metainfo.xml -t /app/share/metainfo
   sources:
   - cargo-sources.json
   - type: git
     url: https://github.com/qarmin/czkawka.git
-    tag: 3.3.1
+    tag: 4.0.1
