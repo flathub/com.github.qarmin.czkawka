@@ -33,6 +33,12 @@ modules:
   - type: archive
     url: https://github.com/GNOME/pygobject/archive/refs/tags/3.42.2.tar.gz
     sha256: 56e6833f875bfe55409c780b9c87a9fc426c1cd55b3c65836de9d384d206201f
+- name: pango
+  buildsystem: meson
+  sources:
+  - type: archive
+    url: https://github.com/GNOME/pango/archive/refs/tags/1.50.8.tar.gz
+    sha256: 2b6ab4a4418bc3be0e8384fb781a70253c5f6e81a83008fe58a8312b738600f1
 - name: graphene
   buildsystem: meson
   sources:
