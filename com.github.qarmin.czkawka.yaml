@@ -17,6 +17,40 @@ build-options:
   env:
     CARGO_HOME: "/run/build/czkawka_gui/cargo"
 modules:
+- name: py3cairo
+  buildsystem: simple
+  build-commands:
+  - python3 setup.py install --prefix=/app --root=/
+  sources:
+  - type: archive
+    url: https://github.com/pygobject/pycairo/releases/download/v1.21.0/pycairo-1.21.0.tar.gz
+    sha256: 251907f18a552df938aa3386657ff4b5a4937dde70e11aa042bc297957f4b74b
+- name: python3-gi
+  buildsystem: simple
+  build-commands:
+  - python3 setup.py install --prefix=/app --root=/
+  sources:
+  - type: archive
+    url: https://github.com/GNOME/pygobject/archive/refs/tags/3.42.2.tar.gz
+    sha256: 56e6833f875bfe55409c780b9c87a9fc426c1cd55b3c65836de9d384d206201f
+- name: pango
+  buildsystem: meson
+  sources:
+  - type: archive
+    url: https://github.com/GNOME/pango/archive/refs/tags/1.50.8.tar.gz
+    sha256: 2b6ab4a4418bc3be0e8384fb781a70253c5f6e81a83008fe58a8312b738600f1
+- name: graphene
+  buildsystem: meson
+  sources:
+  - type: archive
+    url: https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
+    sha256: 922dc109d2dc5dc56617a29bd716c79dd84db31721a8493a13a5f79109a4a4ed
+- name: gtk4
+  buildsystem: meson
+  sources:
+  - type: archive
+    url: https://download.gnome.org/sources/gtk/4.7/gtk-4.7.1.tar.xz
+    sha256: dbe0495d2933c461515bfed886b57f4d10b4e70a0c7ce6c933d8720b400d09b4
 - name: czkawka_gui
   buildsystem: simple
   build-commands:
@@ -30,4 +64,4 @@ modules:
   - cargo-sources.json
   - type: git
     url: https://github.com/qarmin/czkawka.git
-    tag: 4.1.0
+    tag: 5.0.0
