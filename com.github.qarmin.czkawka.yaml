@@ -12,6 +12,7 @@ finish-args:
 - "--filesystem=host"
 - "--device=dri"
 - "--filesystem=~/.var/app"
+- "--filesystem=xdg-config/gtk-4.0:ro"
 build-options:
   append-path: "/usr/lib/sdk/rust-stable/bin"
   env:
