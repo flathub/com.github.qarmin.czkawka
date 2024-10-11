@@ -1,6 +1,6 @@
 app-id: com.github.qarmin.czkawka
 runtime: org.gnome.Platform
-runtime-version: '45'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
@@ -12,7 +12,6 @@ finish-args:
 - "--filesystem=host"
 - "--device=dri"
 - "--filesystem=~/.var/app"
-- "--filesystem=xdg-config/gtk-4.0:ro"
 build-options:
   append-path: "/usr/lib/sdk/rust-stable/bin"
   env:
@@ -31,4 +30,5 @@ modules:
   - cargo-sources.json
   - type: git
     url: https://github.com/qarmin/czkawka.git
-    tag: 6.1.0
+    tag: 8.0.0
+    # commit: 1685fd8ab623cca4e4245a03e0beb661dd48dd53
