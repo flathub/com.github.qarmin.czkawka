@@ -25,4 +25,4 @@ podman run --rm -it \
   sh -c "mkdir -p /tmp/build/flatpak-builder-tools && \
   curl -o /tmp/build/flatpak-builder-tools/flatpak-cargo-generator.py https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/refs/heads/master/cargo/flatpak-cargo-generator.py && \
   pip install --root-user-action=ignore aiohttp toml && \
-  python3 /tmp/build/flatpak-builder-tools/cargo/flatpak-cargo-generator.py ${LOCK_FILE_DIR}/czkawka-${TARGET_VERSION}/Cargo.lock -o /tmp/build/cargo-sources.json"
+  python3 /tmp/build/flatpak-builder-tools/flatpak-cargo-generator.py ${LOCK_FILE_DIR}/czkawka-${TARGET_VERSION}/Cargo.lock -o /tmp/build/cargo-sources.json"
