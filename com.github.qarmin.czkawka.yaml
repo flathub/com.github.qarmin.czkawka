@@ -1,6 +1,6 @@
 app-id: com.github.qarmin.czkawka
 runtime: org.gnome.Platform
-runtime-version: '47'
+runtime-version: '47' # Latest version can be obtained here https://flathub.org/apps/org.gnome.Platform
 sdk: org.gnome.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
@@ -29,5 +29,5 @@ modules:
   - cargo-sources.json
   - type: git
     url: https://github.com/qarmin/czkawka.git
-    tag: 8.0.0
+    tag: 9.0.0
     # commit: 1685fd8ab623cca4e4245a03e0beb661dd48dd53

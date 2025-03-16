@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # set this to the git release tag
-TARGET_VERSION="8.0.0"
+TARGET_VERSION="9.0.0"
 
 LOCK_FILE_DIR=$(mktemp -d)
 cleanup() {
