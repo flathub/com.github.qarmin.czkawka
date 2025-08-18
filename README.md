@@ -19,6 +19,9 @@ Install Podman beforehand.
 ## Linting Manifest
 
 ```
+flatpak install flathub org.flatpak.Builder
+flatpak install flathub org.flathub.flatpak-external-data-checker
+
 flatpak run org.flathub.flatpak-external-data-checker com.github.qarmin.czkawka.yaml
 
 flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest com.github.qarmin.czkawka.yaml
