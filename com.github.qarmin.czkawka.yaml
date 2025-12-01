@@ -20,7 +20,7 @@ modules:
   buildsystem: simple
   build-commands:
   - cargo --offline fetch --manifest-path Cargo.toml
-  - cargo --offline build --release
+  - cargo --offline build --release --features "heif, libavif, libraw"
   - install -Dm755 ./target/release/czkawka_gui -t /app/bin/
   - install -Dm644 ./data/icons/com.github.qarmin.czkawka.svg -t /app/share/icons/hicolor/scalable/apps/
   - install -Dm644 ./data/com.github.qarmin.czkawka.desktop -t /app/share/applications/
