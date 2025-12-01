@@ -1,6 +1,6 @@
 app-id: com.github.qarmin.czkawka
 runtime: org.gnome.Platform
-runtime-version: '48' # Latest version can be obtained here https://flathub.org/apps/org.gnome.Platform
+runtime-version: '49' # Latest version can be obtained here https://flathub.org/apps/org.gnome.Platform
 sdk: org.gnome.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
