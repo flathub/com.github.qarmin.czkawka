@@ -29,5 +29,4 @@ modules:
   - cargo-sources.json
   - type: git
     url: https://github.com/qarmin/czkawka.git
-    tag: 10.0.0
-    # commit: 1685fd8ab623cca4e4245a03e0beb661dd48dd53
+    commit: 93b0733075e5ab073b012e3cea26e60d195019b9 # 10.0.0_flatpak branch
